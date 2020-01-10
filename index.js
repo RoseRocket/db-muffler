@@ -23,7 +23,7 @@ function processValue(value = '', config = {}) {
     const { type, value: configValue, excludeValues = [], isString = false } = config;
     let newValue;
 
-    if (excludeValues.includes(value)) {
+    if (excludeValues.includes(removeQuotesAndTrim(value))) {
         return value;
     }
 
@@ -59,6 +59,10 @@ function processValue(value = '', config = {}) {
     newValue = isString ? `'${newValue}'` : newValue;
 
     return newValue || value;
+}
+
+function removeQuotesAndTrim(value = '') {
+    return value.startsWith("'") ? value.substring(1).slice(0, -1) : value;
 }
 
 function processContent(content = '', config = {}) {

@@ -52,5 +52,5 @@ const cli = meow(
 );
 
 dbMuffler(cli.input[0], cli.flags)
-    .then(outputFileName => console.log(`New SQL file was saved to ${outputFileName}!`))
+    .then(outputFileName => console.log(`New SQL file was saved to ${outputFileName}`))
     .catch(error => console.error(`DB-Muffler Error: ${error}`));

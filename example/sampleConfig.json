@@ -5,7 +5,8 @@
         },
         "email": {
             "type": "faker.internet.email",
-            "excludeValues": "myadmin@gmail.com"
+            "excludeValues": "admin1@ancarrier.com",
+            "isString": true
         },
         "deleted_at": {
             "type": "null"
