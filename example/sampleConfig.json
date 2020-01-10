@@ -1,0 +1,25 @@
+{
+    "public.users": {
+        "password": {
+            "type": "empty"
+        },
+        "email": {
+            "type": "faker.internet.email",
+            "excludeValues": "myadmin@gmail.com"
+        },
+        "deleted_at": {
+            "type": "null"
+        },
+        "activated": {
+            "type": "value",
+            "value": "true"
+        },
+        "days_online": {
+            "type": "faker.random.number"
+        },
+        "user_avatar": {
+            "type": "faker.internet.avatar",
+            "isString": true
+        }
+    }
+}

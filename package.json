@@ -1,0 +1,44 @@
+{
+    "name": "db-muffler",
+    "version": "1.0.0",
+    "author": "Alexey Novak <abovebluesky@gmail.com>",
+    "main": "index.js",
+    "bin": {
+        "db-muffler": "./bin/db-muffler"
+    },
+    "description": "Tool to obscure values in your SQL dump file",
+    "contributors": [
+        {
+            "name": "Alexey Novak",
+            "email": "abovebluesky@gmail.com"
+        }
+    ],
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "db",
+        "sql dump",
+        "sqldump",
+        "data",
+        "obscure",
+        "muffler",
+        "sql",
+        "postgresql"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:roserocket/db-muffler.git"
+    },
+    "dependencies": {
+        "await-of": "1.2.0",
+        "faker": "4.1.0",
+        "meow": "6.0.0"
+    },
+    "bugs": {
+        "url": "https://github.com/roserocket/db-muffler/issues"
+    },
+    "homepage": "https://github.com/roserocket/db-muffler#readme",
+    "private": false,
+    "license": "MIT"
+}
